@@ -1,36 +1,8 @@
 <html>
    <head>
-     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-     <script>
-       function telefone(){
-           var telefone = document.querySelector(".telefone").value;
-           var html = '<a href="tel:'+telefone+'"><img src="https://i.pinimg.com/564x/f7/3c/f4/f73cf43f611ba760c95b7e008dfbff1b.jpg">';           
-           document.querySelector(".imagemTelefone").innerHTML = html;
-        }
-        function email(){
-           var email = document.querySelector(".email").value;
-           var html = '<a href="mailto:'+email+'"><img alt="" src="https://i.pinimg.com/564x/e2/34/76/e234761c296d5bb63f96dfc35c3637ae.jpg"></a>';           
-           document.querySelector(".imagemEmail").innerHTML = html;
-        }
-        function instagram(){
-           var instagram = document.querySelector(".instagram").value;
-           var html = '<a href="'+instagram+'"><img alt="" src="https://i.pinimg.com/564x/57/20/bc/5720bcf18f1457bf467b893dc14eefd8.jpg"></a>';           
-           document.querySelector(".imagemInstagram").innerHTML = html;
-        }
-        function site(){
-           var site = document.querySelector(".site").value;
-           var html = '<a href="'+site+'"><img alt="" src="https://i.pinimg.com/564x/f7/11/35/f71135be0eca4e7b215ea25dad70e30e.jpg"></a>';           
-           document.querySelector(".imagemSite").innerHTML = html;
-        }
-    </script>
-    <style type="text/css">
-        img{
-            height: 50px;
-            width: 50px; 
-            margin-left: 5px; 
-            margin-right: 5px;
-        }
-    </style>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jsguia.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssguia.css">
   </head>
   <body>
     <section>
@@ -63,6 +35,14 @@
             <input type="text" class="site">
             <button onclick="site()">Gerar</button>
             <p class="imagemSite">
+        </div>
+    </section>
+    <section>
+        <div>
+            whatsapp:
+            <input type="text" class="whats">
+            <button onclick="whats()">Gerar</button>
+            <p class="imagemWhats">
         </div>
     </section>
   </body>
